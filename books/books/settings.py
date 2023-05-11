@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 
 from pathlib import Path
 
+import GITHUB_KEY
+import GITHUB_SECRET
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -138,5 +140,5 @@ REST_FRAMEWORK = {
 
 SOCIAL_AUTH_POSTGRES_JSONFIELD = True
 
-SOCIAL_AUTH_GITHUB_KEY = '6d5ccbd66d914bd29593'
-SOCIAL_AUTH_GITHUB_SECRET = 'be2447991e7e109c8935db55941f22d77ccca995'
+SOCIAL_AUTH_GITHUB_KEY = GITHUB_KEY.n
+SOCIAL_AUTH_GITHUB_SECRET = GITHUB_SECRET.n1
